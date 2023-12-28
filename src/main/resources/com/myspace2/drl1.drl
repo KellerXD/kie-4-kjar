@@ -1,0 +1,17 @@
+package com.myspace2;
+
+import com.myspace2.DataObj2;
+
+// dialect "java"
+
+rule "Row 1 kmgdt1"
+// ruleflow-group "kmgdt1-g1"
+when
+    // eval(true)
+    dooo : DataObj2(f3 == true)
+then
+    // System.out.println("dooo not exists");
+    System.out.println("do1 f2 in drl : " + dooo);
+    dooo.setF2( "xxx1" );
+    System.out.println("do1 f2 in drl : " + dooo.getF2());
+end
